@@ -7,99 +7,107 @@
    	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-		<span class="first">
-			CianTweet!
-			<span class="icon-edit new"></span>
-			<div class="tweetform">
-				<input type="text" name="tweet" class="input"/>
-				<button class="btn">Tweet!</button>
+	<div class="container">
+		<div class="row" >
+			<div class="first col-sm-12 col-md-6 col-md-offset-3">
+				CianTweet!
+				<span class="icon-edit new"></span>
+				<div class="tweetform">
+				    <textarea class="form-control" rows="3"></textarea>
+				  	<button type="submit" class="btn btn-default pull-right mt">Tweet!</button>
+				</div>
+
 			</div>
-		</span>
-		<ul class="timeline" id="timeline">
-			<li>
-				<div class="avatar">
-          			<img src="http://www.croop.cl/UI/twitter/images/doug.jpg">
-					<div class="hover">
-						<div class="icon-twitter"></div>
+		</div>
+		<div class="row">
+			<ul class="timeline col-sm-12 col-md-6 col-md-offset-3" id="timeline">
+				<li class="row">
+					<div class="avatar">
+	          			<img src="http://www.croop.cl/UI/twitter/images/doug.jpg">
+						<div class="hover">
+							<div class="icon-twitter"></div>
+						</div>
 					</div>
-				</div>
-				<div class="bubble-container">
-					<div class="bubble">
+					<div class="bubble-container">
+						<div class="bubble">
+							<h3>@russel</h3><br/>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
+							<div class="over-bubble">
+								<div class="icon-mail-reply action"></div>
+								<div class="icon-retweet action"></div>
+								<div class="icon-star"></div>
+							</div>
+						</div>
+						<div class="arrow"></div>
+					</div>
+				</li>
+				<li class="row">
+					<div class="avatar">
+						<img src="http://www.croop.cl/UI/twitter/images/carl.jpg">
+						<div class="hover">
+							<div class="icon-twitter"></div>
+						</div>
+					</div>
+					<div class="bubble-container">
+						<div class="bubble">
+							<h3>@carlf</h3><br/>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
+							<div class="over-bubble">
+								<div class="icon-mail-reply action"></div>
+								<div class="icon-retweet action"></div>
+								<div class="icon-star"></div>
+							</div>
+						</div>
+						<div class="arrow"></div>
+					</div>
+				</li>
+				<li class="row">
+					<div class="avatar">
+						<img src="http://www.croop.cl/UI/twitter/images/russel.jpg">
+						<div class="hover">
+							<div class="icon-twitter"></div>
+						</div>
+					</div>
+					<div class="bubble-container">
+						<div class="bubble">
 						<h3>@russel</h3><br/>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
-						<div class="over-bubble">
-							<div class="icon-mail-reply action"></div>
-							<div class="icon-retweet action"></div>
-							<div class="icon-star"></div>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
+							<div class="over-bubble">
+								<div class="icon-mail-reply action"></div>
+								<div class="icon-retweet action"></div>
+								<div class="icon-star"></div>
+							</div>
+						</div>
+						<div class="arrow"></div>
+					</div>
+				</li>
+				<li class="row">
+					<div class="avatar">
+						<img src="http://www.croop.cl/UI/twitter/images/carl.jpg">
+						<div class="hover">
+							<div class="icon-twitter"></div>
 						</div>
 					</div>
-					<div class="arrow"></div>
-				</div>
-			</li>
-			<li>
-				<div class="avatar">
-					<img src="http://www.croop.cl/UI/twitter/images/carl.jpg">
-					<div class="hover">
-						<div class="icon-twitter"></div>
-					</div>
-				</div>
-				<div class="bubble-container">
-					<div class="bubble">
-						<h3>@carlf</h3><br/>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
-						<div class="over-bubble">
-							<div class="icon-mail-reply action"></div>
-							<div class="icon-retweet action"></div>
-							<div class="icon-star"></div>
+					<div class="bubble-container">
+						<div class="bubble">
+							<h3>@carlf</h3><br/>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
+							<div class="over-bubble">
+								<div class="icon-mail-reply action"></div>
+								<div class="icon-retweet action"></div>
+								<div class="icon-star"></div>
+							</div>
 						</div>
+						<div class="arrow"></div>
 					</div>
-					<div class="arrow"></div>
-				</div>
-			</li>
-			<li>
-				<div class="avatar">
-					<img src="http://www.croop.cl/UI/twitter/images/russel.jpg">
-					<div class="hover">
-						<div class="icon-twitter"></div>
-					</div>
-				</div>
-				<div class="bubble-container">
-					<div class="bubble">
-					<h3>@russel</h3><br/>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
-						<div class="over-bubble">
-							<div class="icon-mail-reply action"></div>
-							<div class="icon-retweet action"></div>
-							<div class="icon-star"></div>
-						</div>
-					</div>
-					<div class="arrow"></div>
-				</div>
-			</li>
-			<li>
-				<div class="avatar">
-					<img src="http://www.croop.cl/UI/twitter/images/carl.jpg">
-					<div class="hover">
-						<div class="icon-twitter"></div>
-					</div>
-				</div>
-				<div class="bubble-container">
-					<div class="bubble">
-						<h3>@carlf</h3><br/>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
-						<div class="over-bubble">
-							<div class="icon-mail-reply action"></div>
-							<div class="icon-retweet action"></div>
-							<div class="icon-star"></div>
-						</div>
-					</div>
-					<div class="arrow"></div>
-				</div>
-			</li>
-		</ul>
+				</li>
+			</ul>
+
+		</div>
 	</div>
 	<script src="js/jquery-3.1.1.js"></script>
 </body>
