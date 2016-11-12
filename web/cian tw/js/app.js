@@ -54,6 +54,14 @@ $(document).ready(function(){
         textarea.focus()
     }
 
+    // API
+    var obtenerTweets = function(){
+        $.getJSON('/tweets', function(data){
+            console.log('tweets!', data);
+        })
+    }
+    obtenerTweets()
+
     // nombre
     var nombre = ''
     var pedirNombre = function(){
