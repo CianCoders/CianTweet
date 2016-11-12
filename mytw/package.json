@@ -33,6 +33,7 @@
     "feathers-mongoose": "^3.6.0",
     "feathers-rest": "^1.5.2",
     "feathers-socketio": "^1.4.2",
+    "johnny-five": "^0.10.5",
     "mongoose": "^4.6.7",
     "passport": "^0.3.2",
     "serve-favicon": "^2.3.0",

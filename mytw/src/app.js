@@ -1,5 +1,6 @@
 'use strict';
-
+const five = require("johnny-five");
+const board = new five.Board();
 const path = require('path');
 const serveStatic = require('feathers').static;
 const favicon = require('serve-favicon');
@@ -15,6 +16,13 @@ const middleware = require('./middleware');
 const services = require('./services');
 
 const app = feathers();
+app.board = board;
+board.on("ready", function() {
+  var servo = new five.Servo(10)
+  app.servo = servo
+  app.servoDeg = 90
+  servo.center()
+})
 
 app.configure(configuration(path.join(__dirname, '..')));
 

@@ -3,6 +3,7 @@
 const globalHooks = require('../../../hooks');
 const hooks = require('feathers-hooks');
 const sort = require('./sort')
+const moverServo = require('./moveServo')
 
 exports.before = {
   all: [],
@@ -18,7 +19,7 @@ exports.after = {
   all: [],
   find: [],
   get: [],
-  create: [],
+  create: [moverServo()],
   update: [],
   patch: [],
   remove: []
