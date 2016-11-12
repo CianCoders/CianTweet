@@ -31,7 +31,25 @@
 		</div>
 	</div>
 
-	<script src="js/jquery-3.1.1.js"></script>
+  <div class="modal fade" tabindex="-1" role="dialog" id="prompt">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Escribe tu nombre</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" name="name" id="name-input"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="save-name">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<script src="js/handlebars.js"></script>
   <script type="text/javascript" src="/socket.io/socket.io.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/core-js/2.1.4/core.min.js"></script>

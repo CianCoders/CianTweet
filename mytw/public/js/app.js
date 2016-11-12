@@ -76,6 +76,7 @@ $(document).ready(function(){
     var renderizarTweet = function(data){
         // renderizar
         if (templateListo){
+            data.avatar = 'http://lorempixel.com/100/100/?d=' + data.id
             var html = tweetTemplate(data);
             var newTweet = $(html)
 
@@ -106,10 +107,18 @@ $(document).ready(function(){
     // nombre
     var nombre = ''
     var pedirNombre = function(){
-        nombre = prompt('¿Cual es tu nombre?')
+        $('#prompt').modal('show')
+        setTimeout(function(){
+            $('#name-input').focus()
+        }, 500)
     }()
 
     // handlers
+    $('#save-name').click(function(){
+        nombre = $('#name-input').val()
+        $('#prompt').modal('hide')
+    })
+
     $('#nuevo').click(function(){
         mostrarInput();
     })
