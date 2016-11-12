@@ -2,11 +2,11 @@
 
 const globalHooks = require('../../../hooks');
 const hooks = require('feathers-hooks');
-
+const sort = require('./sort')
 
 exports.before = {
   all: [],
-  find: [],
+  find: [sort()],
   get: [],
   create: [],
   update: [],
