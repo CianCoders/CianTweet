@@ -26,38 +26,19 @@ $(document).ready(function(){
     })
 
     // API
-    var tweetsIds = {}
     var obtenerTweets = function(){
         $.getJSON('/tweets', function(data){
+            console.log('tweets!', data);
             data.data.map(function(tweet){
-                if (!tweetsIds[tweet._id]){
-                    var data = {
-                        id: tweet._id,
-                        tweet: tweet.tweet,
-                        usuario: tweet.usuario,
-                    }
-                    renderizarTweet(data)
-                    tweetsIds[tweet._id] = true
-                    console.log(tweetsIds)
+                var data = {
+                    id: tweet._id,
+                    tweet: tweet.tweet,
+                    usuario: tweet.usuario,
                 }
+                renderizarTweet(data)
             })
         })
-    }
-
-    obtenerTweets()
-    setInterval(function(){
-      obtenerTweets()
-    }, 5000)
-
-    var postTweet = function(data){
-        $.post('/tweets', data)
-            .done(function(data){
-                console.log('post completado', data)
-            })
-            .fail(function(){
-              console.log('post fallido!')
-            })
-    }
+    }()
 
 
     // tweet
@@ -81,10 +62,11 @@ $(document).ready(function(){
 
         // renderizar tweet
         var data = {
+            id: tweetId,
             tweet: tweet,
             usuario: nombre,
         }
-        postTweet(data)
+        tweetId += 1
 
         // reset y focus del tweet
         textarea.val('')
