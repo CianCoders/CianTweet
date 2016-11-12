@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CianTweet</title>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
    	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
@@ -15,10 +17,10 @@
 		<div class="row" >
 			<div class="first col-sm-12 col-md-6 col-md-offset-3">
 				CianTweet!
-				<span class="icon-edit new"></span>
+				<span class="icon-edit new" id="nuevo"></span>
 				<div class="tweetform">
-				    <textarea class="form-control" rows="3"></textarea>
-				  	<button type="submit" class="btn btn-default pull-right mt">Tweet!</button>
+				    <textarea class="form-control" rows="3" id="tweetcontent"></textarea>
+				  	<button class="btn btn-default pull-right mt" id="tweet">Tweet!</button>
 				</div>
 
 			</div>
@@ -106,9 +108,9 @@
 					</div>
 				</li>
 			</ul>
-
 		</div>
 	</div>
 	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

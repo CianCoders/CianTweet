@@ -123,6 +123,7 @@ body {
   transition-timing-function: ease; }
 
 .first {
+  height: 60px;
   overflow: hidden;
   display: block;
   background-color: #3498db;
