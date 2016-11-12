@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "mongodb": "mongodb://localhost:27017/mytw",
+  "public": "../public/",
+  "auth": {
+    "token": {
+      "secret": "FmKViTBfnGdeNRocmB8tT0iwy5w2elP/epd2UdCQYA2bjyGWViqKT+bhzDq1l/F4SMCcc/A0AdazpLXPlksrWw=="
+    },
+    "local": {}
+  }
+}
